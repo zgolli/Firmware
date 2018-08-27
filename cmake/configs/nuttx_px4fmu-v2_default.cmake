@@ -6,6 +6,8 @@ set(board_serial_ports
 	TEL1:/dev/ttyS1
 	TEL2:/dev/ttyS2)
 
+set(px4_constrained_flash_build 1)
+
 #set(config_uavcan_num_ifaces 2)
 
 set(config_module_list
