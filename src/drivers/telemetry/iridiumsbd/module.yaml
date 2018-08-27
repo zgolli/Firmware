@@ -1,0 +1,9 @@
+module_name: Iridium (with MAVLink)
+serial_config:
+    - command: |
+        iridiumsbd start -d ${SERIAL_DEV}
+        mavlink start -d /dev/iridium -b 19200 -m iridium -r 10
+      port_config_param:
+        name: ISBD_CONFIG
+        group: Iridium SBD
+
